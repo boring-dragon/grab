@@ -1,0 +1,50 @@
+{
+    "name": "jinas/grab",
+    "description": "Grab is a indexing tool for wordpress API Wrapper.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohamed Jinas",
+            "email": "j@live.mv"
+        }
+    ],
+    "require": {
+        "php": "^7.2.5",
+        "guzzlehttp/guzzle": "^6.3.1",
+        "illuminate/database": "^7.0",
+        "illuminate/http": "^7.0",
+        "illuminate/log": "^7.0",
+        "laminas/laminas-text": "^2.7",
+        "laravel-zero/framework": "^7.0",
+        "tightenco/collect": "^7.6"
+    },
+    "require-dev": {
+        "fzaninotto/faker": "^1.4",
+        "mockery/mockery": "^1.3.1",
+        "phpunit/phpunit": "^8.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "@php application app:rename"
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "bin": ["application"]
+}
