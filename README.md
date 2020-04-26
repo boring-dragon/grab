@@ -85,4 +85,24 @@ PHP grab fetch:posts addulive.com --prefix=talks
 Which will correspond to https://addulive.com/wp-json/wp/v2/talks
 
 
+------------------------------
+## Supported Sites
+------------------------------
+
+- Addulive.com ✔
+- Feshun.com ✔
+- Vaahaka.com ✔
+- esfiya.com ✔
+- faanooz.com ✔
+- ungoofaaru.com ✔
+
+
+------------------------------
+## Unsupported Sites
+------------------------------
+
+- vaguthu.mv ❌
+- thiladhun.com ❌
+
+
 ## This is an experimental project. Please don't misuse this application.
