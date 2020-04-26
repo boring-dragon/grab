@@ -15,7 +15,7 @@ class PostRepository
     //API Prefix
     protected $API_PREFIX = "/wp-json/wp/v2/";
 
-    // Comment prefix
+    // Post prefix
     protected $PREFIX = "posts";
 
 
