@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Media;
 
 class Post extends Model
 {
@@ -14,4 +15,5 @@ class Post extends Model
    	'content',
    	'link'
    ];
+
 }
