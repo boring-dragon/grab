@@ -14,7 +14,7 @@ composer install
 
 ### Create database
 
-Make a database.sqlite file inside /database directory or you can use your own config to generate the database.
+Make a database.sqlite file inside /database directory or you can use your config to generate the database.
 
 [Laravel zero database](https://laravel-zero.com/docs/database/)
 
@@ -25,6 +25,19 @@ Make a database.sqlite file inside /database directory or you can use your own c
 Now you are all set to use the application
 
 ### Grabbing comments
+
+Comment schema
+
+| Name          | Datatype      |
+| ------------- |:-------------:|
+| source     | `string` |
+| comment_id     | `unsignedInteger`      |
+| post_id | `unsignedInteger`       |
+| author_name | `string`       |
+| comment | `text`       |
+| upvotes | `unsignedInteger|nullable`       |
+| downvotes | `unsignedInteger|nullable`       |
+| date | `timestamp`       |
 
 ```bash
 php grab fetch:comments {sitename.com}
@@ -44,6 +57,16 @@ Which will correspond to https://addulive.com/wp-json/wp/v2/talks
 
 
 ### Grabbing Posts
+
+Post Schema
+
+| Name          | Datatype      |
+| ------------- |:-------------:|
+| source     | `string` |
+| post_id | `unsignedInteger`       |
+| title | `string`       |
+| text | `text|nullable`       |
+| link | `string`       |
 
 ```bash
 php grab fetch:posts {sitename.com}
