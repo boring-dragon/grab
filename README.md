@@ -35,8 +35,8 @@ Comment schema
 | post_id | `unsignedInteger`       |
 | author_name | `string`       |
 | comment | `text`       |
-| upvotes | `unsignedInteger|nullable`       |
-| downvotes | `unsignedInteger|nullable`       |
+| upvotes | `unsignedInteger-nullable`       |
+| downvotes | `unsignedInteger-nullable`       |
 | date | `timestamp`       |
 
 ```bash
@@ -65,7 +65,7 @@ Post Schema
 | source     | `string` |
 | post_id | `unsignedInteger`       |
 | title | `string`       |
-| text | `text|nullable`       |
+| text | `text-nullable`       |
 | link | `string`       |
 
 ```bash
