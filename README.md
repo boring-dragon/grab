@@ -1,6 +1,6 @@
 # Grab 🔮
 
-Grab is an indexing CLI tool for WordPress API Wrapper. Built with laravel Zero.
+Grab is an indexing CLI tool for WordPress API. Built with laravel Zero.
 
 ## Installation
 
