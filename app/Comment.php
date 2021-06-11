@@ -14,6 +14,6 @@ class Comment extends Model
         'downvotes',
         'date',
         'comment_id',
-        'post_id'
+        'post_id',
     ];
 }

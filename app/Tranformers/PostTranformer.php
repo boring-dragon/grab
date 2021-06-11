@@ -5,7 +5,7 @@ namespace App\Tranformers;
 use Illuminate\Support\Arr;
 
 class PostTranformer implements ITranformer
-{   
+{
     // Conditional posts keys
     protected static $posts_keys = [
         'id',
@@ -13,15 +13,16 @@ class PostTranformer implements ITranformer
         'content',
         'title',
         'link',
-        'content'
+        'content',
     ];
 
     /**
-     * tranform
-     * 
+     * tranform.
+     *
      *  Tranforms Posts
      *
-     * @param  mixed $post
+     * @param mixed $post
+     *
      * @return array
      */
     public static function tranform(array $post): array
@@ -31,6 +32,7 @@ class PostTranformer implements ITranformer
                 $post[$key] = null;
             }
         }
+
         return $post;
     }
 }
