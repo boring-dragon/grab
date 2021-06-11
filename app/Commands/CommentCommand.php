@@ -2,8 +2,8 @@
 
 namespace App\Commands;
 
-use Illuminate\Console\Command;
 use App\Repositories\CommentRepository;
+use Illuminate\Console\Command;
 
 class CommentCommand extends Command
 {
@@ -38,14 +38,13 @@ class CommentCommand extends Command
      */
     public function handle(CommentRepository $comments)
     {
-        if($this->option('prefix'))
-        {
+        if ($this->option('prefix')) {
             $comments->setPrefix($this->option('prefix'));
         }
 
-        $comments->setEndPoint("https://" . $this->argument('endpoint'));
+        $comments->setEndPoint('https://'.$this->argument('endpoint'));
         $comments->fetch();
 
-        $this->info("Done! 🍓");
+        $this->info('Done! 🍓');
     }
 }

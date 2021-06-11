@@ -15,15 +15,16 @@ class CommentTranformer implements ITranformer
         'upvotes',
         'downvotes',
         'date',
-        'timestamp'
+        'timestamp',
     ];
 
     /**
-     * tranform
-     * 
+     * tranform.
+     *
      *  Tranforms comments
      *
-     * @param  mixed $comment
+     * @param mixed $comment
+     *
      * @return array
      */
     public static function tranform(array $comment): array
@@ -33,6 +34,7 @@ class CommentTranformer implements ITranformer
                 $comment[$key] = null;
             }
         }
+
         return $comment;
     }
 }

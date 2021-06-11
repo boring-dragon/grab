@@ -2,9 +2,8 @@
 
 namespace App\Commands;
 
-use Illuminate\Console\Command;
 use App\Repositories\PostRepository;
-
+use Illuminate\Console\Command;
 
 class PostCommand extends Command
 {
@@ -39,14 +38,13 @@ class PostCommand extends Command
      */
     public function handle(PostRepository $posts)
     {
-        if($this->option('prefix'))
-        {
+        if ($this->option('prefix')) {
             $posts->setPrefix($this->option('prefix'));
         }
 
-        $posts->setEndPoint("https://" . $this->argument('endpoint'));
+        $posts->setEndPoint('https://'.$this->argument('endpoint'));
         $posts->fetch();
 
-        $this->info("Done! 🍓");
+        $this->info('Done! 🍓');
     }
 }
